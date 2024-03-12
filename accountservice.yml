@@ -1,3 +1,33 @@
+
+
+build:
+  version: "0.0"
+
+accounts:
+  message: "Welcome to ZettaBank accounts related prod APIs DEFAULT "
+  contactDetails:
+    name: "Valerie - Product Owner"
+    email: "valerie@zettabank.com"
+  onCallSupport:
+    - (453) 392-4829
+    - (236) 203-0384
+
+
 spring:
   profiles:
     active: "prod"
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: 1234
+    url: jdbc:h2:mem:accountsdefaultdb
+    username: admin
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
