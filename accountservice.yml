@@ -1,9 +1,9 @@
-server:
-  port: 8090
+# server:
+#   port: 8090
 
-spring:
-  config:
-    import: "optional:configserver:http://localhost:8071/"
+# spring:
+#   config:
+#     import: "optional:configserver:http://localhost:8071/"
 #    import: "optional:configserver:"
 #     import: "configserver:http://localhost:8071/"
 #  datasource:
@@ -21,22 +21,22 @@ spring:
 #    hibernate:
 #      ddl-auto: update
 #    show-sql: true
-  application:
-    name: "accountservice"
+  # application:
+  #   name: "accountservice"
   profiles:
     active: "prod"
-  rabbitmq:
-    host: "localhost"
-    port: 5672
-    username: "guest"
-    password: "guest"
+  # rabbitmq:
+  #   host: "localhost"
+  #   port: 5672
+  #   username: "guest"
+  #   password: "guest"
 
 #using refresh with spring actuator  
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: "*"
 
 #using rabbitmq spring cloud bus
 #management:
