@@ -13,9 +13,9 @@ accounts:
     - (236) 203-0384
 
 
-spring:
-  profiles:
-    active: "prod"
+# spring:
+#   profiles:
+#     active: "prod"
   # datasource:
   #   driver-class-name: org.h2.Driver
   #   password: 1234
