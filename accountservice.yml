@@ -16,18 +16,18 @@ accounts:
 spring:
   profiles:
     active: "prod"
-  datasource:
-    driver-class-name: org.h2.Driver
-    password: 1234
-    url: jdbc:h2:mem:accountsdefaultdb
-    username: admin
-  h2:
-    console:
-      enabled: true
-      settings:
-        web-allow-others: true
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+  # datasource:
+  #   driver-class-name: org.h2.Driver
+  #   password: 1234
+  #   url: jdbc:h2:mem:accountsdefaultdb
+  #   username: admin
+  # h2:
+  #   console:
+  #     enabled: true
+  #     settings:
+  #       web-allow-others: true
+  # jpa:
+  #   database-platform: org.hibernate.dialect.H2Dialect
+  #   hibernate:
+  #     ddl-auto: update
+  #   show-sql: true
