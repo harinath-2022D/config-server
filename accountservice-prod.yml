@@ -10,3 +10,15 @@ accounts:
     - (453) 392-4829
     - (236) 203-0384
 
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: 1234
+    url: jdbc:h2:mem:accountsinfodb
+    username: admin
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
