@@ -13,10 +13,10 @@ accounts:
 
 spring:
   datasource:
-    driver-class-name: org.h2.Driver
-    password: 1234
-    url: jdbc:h2:mem:accountsdb
-    username: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 3306
+    url: jdbc:mysql://localhost:3306/accountsdb
+    username: root
   h2:
     console:
       enabled: true
