@@ -13,7 +13,7 @@ accounts:
     - (236) 203-0384
 
 
-# spring:
+spring:
 #   # profiles:
 #   #   active: "prod"
 #   datasource:
@@ -28,6 +28,6 @@ accounts:
 #         web-allow-others: true
 #   jpa:
 #     database-platform: org.hibernate.dialect.H2Dialect
-#     hibernate:
-#       ddl-auto: update
-#     show-sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
