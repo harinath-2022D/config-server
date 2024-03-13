@@ -1,1 +1,19 @@
 
+build:
+  version: "0.0"
+
+accounts:
+  message: "Welcome to ZettaBank cards related APIs DEFAULT "
+  contactDetails:
+    name: "Valerie - Product Owner"
+    email: "valerie@zettabank.com"
+  onCallSupport:
+    - (453) 392-4829
+    - (236) 203-0384
+
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
